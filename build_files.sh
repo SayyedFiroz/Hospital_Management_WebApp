@@ -7,3 +7,4 @@ python3.10 manage.py collectstatic
 
 #pywin32==306
 #pywinpty==2.0.12
+#incremental==17.5.0
