@@ -4,3 +4,5 @@
 #echo " BUILD END"
 pip install -r requirements.txt
 python3.10 manage.py collectstatic
+
+#pywin32==306
