@@ -9,8 +9,7 @@ from django.conf import settings
 #-------------FOR ADMIN RELATED URLS
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',views.home_view,name=''),
-    path('',include('hospital.urls')),
+    path('',views.home_view,name=''),
 
 
     path('aboutus', views.aboutus_view),
