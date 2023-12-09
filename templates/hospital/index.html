@@ -1,8 +1,6 @@
 {% extends 'hospital/homebase.html' %}
 {% load static %}
 
-
-
 {% block content %}
 
 
@@ -11,7 +9,7 @@
     .jumbotron {
       margin-top: 0px;
       margin-bottom: 0px;
-      background-image: url('{% static "images/back.jpg" %}');
+      background-image: url('{% static "/images/back.jpg" %}');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -20,11 +18,15 @@
     h3 {
       text-align: center;
     }
-
+.jumbotron h5{
+color: #212529;
+font-weight:400;
+}
 
     .alert {
       margin: 0px;
     }
+
 
 
 
@@ -52,8 +54,9 @@
 <br>
 
 <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+<!--  <img src="static/images/back.jpg" alt="image" width="100%" >-->
   <br>
-  <h5 class="display-3 glow"> Sayyed Hospital Management System</h5>
+  <h5 class="display-3 ">Hospital Management System</h5>
   <br><br><br><br><br>
   <p>
   <h3>Emergency ?</h3>
