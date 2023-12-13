@@ -26,7 +26,7 @@ SECRET_KEY = 'hpbv()ep00boce&o0w7z1h)st148(*m@6@-rk$nn)(n9ojj4c0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 #
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["127.0.0.1","*"]
 # ALLOWED_HOSTS = [".vercel.app", ".now.sh","127.0.0.1"]
 
 
@@ -77,7 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'hospitalmanagement.wsgi.application'
 
-
+#
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 #
@@ -137,10 +137,10 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-MEDIA_URL = 'static/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'/static/images')
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS =[os.path.join(BASE_DIR, "static"),]
 
@@ -157,13 +157,13 @@ EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'sayyedx2777@gmail.com' # this email will be used to send emails
-EMAIL_HOST_PASSWORD = 'wtmabmxenvgkshqx' # host email password required
+EMAIL_HOST_USER = 'newlife272003@gmail.com' # this email will be used to send emails
+EMAIL_HOST_PASSWORD = 'yevingjmjeodvvkk' # host email password required
 # now sign in with your host gmail account in your browser
 # open following link and turn it ON
 # https://myaccount.google.com/lesssecureapps
 # otherwise you will get SMTPAuthenticationError at /contactus
 # this process is required because google blocks apps authentication by default
-EMAIL_RECEIVING_USER = ['sayyedx2777@gmail.com'] # email on which you will receive messages sent from website
+EMAIL_RECEIVING_USER = ['newlife272003@gmail.com'] # email on which you will receive messages sent from website
 
 

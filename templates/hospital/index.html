@@ -12,6 +12,7 @@
       background-image: url('{% static "/images/back.jpg" %}');
       background-size: cover;
       background-repeat: no-repeat;
+      height:100%;
     }
 
     .jumbotron h5,
@@ -19,8 +20,8 @@
       text-align: center;
     }
 .jumbotron h5{
-color: #212529;
-font-weight:400;
+color:#337ab7;
+font-weight:350;
 }
 
     .alert {
@@ -38,14 +39,19 @@ font-weight:400;
       -moz-animation: glow 1s ease-in-out infinite alternate;
       animation: glow 1s ease-in-out infinite alternate;
     }
-
+.logoimg{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap:2rem;
+}
     @-webkit-keyframes glow {
       from {
-        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        text-shadow: 0 0 10px #F5F5F5, 0 0 20px #F5F5F5, 0 0 30px #F5F5F5, 0 0 40px #F5F5F5, 0 0 50px #FFFFFF, 0 0 60px #FFFFFF, 0 0 70px #FFFFFF;
       }
 
       to {
-        text-shadow: 0 0 20px #eeeeee, 0 0 30px #fa2d2d, 0 0 40px #fa2d2d, 0 0 50px #fa2d2d, 0 0 60px #fa2d2d, 0 0 70px #fa2d2d, 0 0 80px #fa2d2d;
+        text-shadow: 0 0 20px #F5F5F5, 0 0 30px #55aafa, 0 0 40px #55aafa, 0 0 50px #55aafa, 0 0 60px #55aafa, 0 0 70px #55aafa, 0 0 80px #55aafa;
       }
     }
   </style>
@@ -56,7 +62,10 @@ font-weight:400;
 <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
 <!--  <img src="static/images/back.jpg" alt="image" width="100%" >-->
   <br>
-  <h5 class="display-3 ">Hospital Management System</h5>
+  <div class="logoimg">
+  <img src="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?w=740&t=st=1702088325~exp=1702088925~hmac=00bbe8a0006da37a7c7a60439bf3d8e35bd7c85d7344f37b4305418834ecfc1d" alt="logo" height="100em" width=100em">
+  <h5 class="display-3 glow ">NewLife Hospital Management System</h5>
+  </div>
   <br><br><br><br><br>
   <p>
   <h3>Emergency ?</h3>
